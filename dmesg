@@ -1,0 +1,676 @@
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+[    0.000000] Linux version 5.13.0-rc6-postmarketos-qcom-msm8953 (pmos@lucas-VirtualBox) (aarch64-alpine-linux-musl-gcc (Alpine 10.3.1_git20210625) 10.3.1 20210625, GNU ld (GNU Binutils) 2.35.2) #8 SMP PREEMPT Thu Aug 12 22:05:54 UTC 2021
+[    0.000000] Machine model: Samsung J8 LTE
+[    0.000000] Reserved memory: created DMA memory pool at 0x0000000081800000, size 0 MiB
+[    0.000000] OF: reserved mem: initialized node gpu@81800000, compatible id shared-dma-pool
+[    0.000000] NUMA: No NUMA configuration found
+[    0.000000] NUMA: Faking a node at [mem 0x0000000010000000-0x00000000ffffffff]
+[    0.000000] NUMA: NODE_DATA [mem 0xff881c00-0xff883fff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000010000000-0x00000000ffffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000010000000-0x00000000817fffff]
+[    0.000000]   node   0: [mem 0x0000000081800000-0x0000000081801fff]
+[    0.000000]   node   0: [mem 0x0000000081802000-0x00000000827fffff]
+[    0.000000]   node   0: [mem 0x0000000082800000-0x00000000857fffff]
+[    0.000000]   node   0: [mem 0x0000000085800000-0x0000000085afffff]
+[    0.000000]   node   0: [mem 0x0000000085b00000-0x00000000860fffff]
+[    0.000000]   node   0: [mem 0x0000000086100000-0x00000000862fffff]
+[    0.000000]   node   0: [mem 0x0000000086300000-0x00000000867fffff]
+[    0.000000]   node   0: [mem 0x0000000086800000-0x0000000086bfffff]
+[    0.000000]   node   0: [mem 0x0000000086c00000-0x000000008f4fffff]
+[    0.000000]   node   0: [mem 0x000000008f500000-0x000000008f5fffff]
+[    0.000000]   node   0: [mem 0x000000008f600000-0x000000008f8fffff]
+[    0.000000]   node   0: [mem 0x000000008f900000-0x000000008fffffff]
+[    0.000000]   node   0: [mem 0x0000000090000000-0x0000000091afffff]
+[    0.000000]   node   0: [mem 0x0000000091b00000-0x0000000091ffffff]
+[    0.000000]   node   0: [mem 0x0000000092000000-0x00000000920fffff]
+[    0.000000]   node   0: [mem 0x0000000092100000-0x00000000f2cfffff]
+[    0.000000]   node   0: [mem 0x00000000f2d00000-0x00000000f2e7ffff]
+[    0.000000]   node   0: [mem 0x00000000f2e80000-0x00000000ffffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000010000000-0x00000000ffffffff]
+[    0.000000] On node 0 totalpages: 983040
+[    0.000000]   DMA zone: 15360 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 983040 pages, LIFO batch:63
+[    0.000000] cma: Reserved 32 MiB at 0x00000000f9c00000
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.0 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: SYSTEM_RESET not supported.
+[    0.000000] psci: SYSTEM_OFF not supported.
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] psci: OSI mode supported.
+[    0.000000] percpu: Embedded 23 pages/cpu s55512 r8192 d30504 u94208
+[    0.000000] pcpu-alloc: s55512 r8192 d30504 u94208 alloc=23*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 [0] 4 [0] 5 [0] 6 [0] 7 
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: detected: ARM erratum 845719
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 967680
+[    0.000000] Policy zone: DMA
+[    0.000000] Kernel command line: console=null PMOS_NO_OUTPUT_REDIRECT
+[    0.000000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] Memory: 3567404K/3932160K available (11008K kernel code, 1186K rwdata, 4020K rodata, 1792K init, 378K bss, 331988K reserved, 32768K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] random: get_random_bytes called from start_kernel+0x34c/0x530 with crng_init=0
+[    0.000000] arch_timer: cp15 and mmio timer(s) running at 19.20MHz (virt/virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+[    0.000001] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+[    0.000291] Console: colour dummy device 80x25
+[    0.000384] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.40 BogoMIPS (lpj=76800)
+[    0.000404] pid_max: default: 32768 minimum: 301
+[    0.000503] LSM: Security Framework initializing
+[    0.000584] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.000614] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.002834] rcu: Hierarchical SRCU implementation.
+[    0.003955] smp: Bringing up secondary CPUs ...
+[    0.004678] Detected VIPT I-cache on CPU1
+[    0.004758] CPU1: Booted secondary processor 0x0000000001 [0x410fd034]
+[    0.005523] Detected VIPT I-cache on CPU2
+[    0.005570] CPU2: Booted secondary processor 0x0000000002 [0x410fd034]
+[    0.006267] Detected VIPT I-cache on CPU3
+[    0.006311] CPU3: Booted secondary processor 0x0000000003 [0x410fd034]
+[    0.007118] Detected VIPT I-cache on CPU4
+[    0.007181] CPU4: Booted secondary processor 0x0000000100 [0x410fd034]
+[    0.007993] Detected VIPT I-cache on CPU5
+[    0.008037] CPU5: Booted secondary processor 0x0000000101 [0x410fd034]
+[    0.008756] Detected VIPT I-cache on CPU6
+[    0.008800] CPU6: Booted secondary processor 0x0000000102 [0x410fd034]
+[    0.009524] Detected VIPT I-cache on CPU7
+[    0.009568] CPU7: Booted secondary processor 0x0000000103 [0x410fd034]
+[    0.009670] smp: Brought up 1 node, 8 CPUs
+[    0.009724] SMP: Total of 8 processors activated.
+[    0.009733] CPU features: detected: 32-bit EL0 Support
+[    0.009741] CPU features: detected: 32-bit EL1 Support
+[    0.009751] CPU features: detected: CRC32 instructions
+[    0.024513] CPU: All CPU(s) started at EL1
+[    0.024583] alternatives: patching kernel code
+[    0.026604] devtmpfs: initialized
+[    0.040987] KASLR disabled due to lack of seed
+[    0.041222] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.041247] futex hash table entries: 2048 (order: 5, 131072 bytes, linear)
+[    0.043288] pinctrl core: initialized pinctrl subsystem
+[    0.044332] NET: Registered protocol family 16
+[    0.047161] DMA: preallocated 512 KiB GFP_KERNEL pool for atomic allocations
+[    0.047809] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.048324] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.048390] audit: initializing netlink subsys (disabled)
+[    0.048567] audit: type=2000 audit(0.048:1): state=initialized audit_enabled=0 res=1
+[    0.049091] thermal_sys: Registered thermal governor 'bang_bang'
+[    0.049100] thermal_sys: Registered thermal governor 'step_wise'
+[    0.049109] thermal_sys: Registered thermal governor 'user_space'
+[    0.049118] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.051001] cpuidle: using governor menu
+[    0.051197] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.051430] ASID allocator initialised with 65536 entries
+[    0.051640] Serial: AMBA PL011 UART driver
+[    0.052747] printk: console [ramoops-1] enabled
+[    0.052969] pstore: Registered ramoops as persistent store backend
+[    0.052982] ramoops: using 0x100000@0x86100000, ecc: 0
+[    0.103392] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.103417] HugeTLB registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.103432] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.103444] HugeTLB registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.105008] cryptd: max_cpu_qlen set to 1000
+[    0.110154] iommu: Default domain type: Translated 
+[    0.110532] SCSI subsystem initialized
+[    0.110756] usbcore: registered new interface driver usbfs
+[    0.110809] usbcore: registered new interface driver hub
+[    0.110862] usbcore: registered new device driver usb
+[    0.111757] i2c-gpio i2c-expander: using lines 391 (SDA) and 390 (SCL)
+[    0.112269] i2c-gpio i2c-battery: using lines 409 (SDA) and 408 (SCL)
+[    0.113087] i2c-gpio i2c-pmic: using lines 468 (SDA) and 469 (SCL)
+[    0.113625] i2c-gpio i2c-orientation: using lines 434 (SDA) and 435 (SCL)
+[    0.114399] i2c-gpio i2c-proximity: using lines 386 (SDA) and 387 (SCL)
+[    0.115073] i2c-gpio i2c-grip: using lines 501 (SDA) and 498 (SCL)
+[    0.115591] CPUidle PSCI: failed to enable OSI mode: -95
+[    0.115977] qcom_scm: convention: smc arm 64
+[    0.120693] genirq: irq_chip msmgpio did not update eff. affinity mask of irq 63
+[    0.148256] sm5502 2-0025: Device type: version: 0x1, vendor: 0x1
+[    0.149306] s1: Bringing 0uV into 864000-864000uV
+[    0.149534] s1: supplied by regulator-dummy
+[    0.149757] s2: supplied by regulator-dummy
+[    0.149854] s3: Bringing 0uV into 1224000-1224000uV
+[    0.150036] s3: supplied by regulator-dummy
+[    0.150121] s4: Bringing 0uV into 1896000-1896000uV
+[    0.150305] s4: supplied by regulator-dummy
+[    0.150323] Advanced Linux Sound Architecture Driver Initialized.
+[    0.150541] s5: supplied by regulator-dummy
+[    0.150803] s6: supplied by regulator-dummy
+[    0.151015] s7: supplied by regulator-dummy
+[    0.151098] l1: Bringing 0uV into 1000000-1000000uV
+[    0.151297] clocksource: Switched to clocksource arch_sys_counter
+[    0.151333] l1: supplied by regulator-dummy
+[    0.151559] VFS: Disk quotas dquot_6.6.0
+[    0.151585] l2: supplied by regulator-dummy
+[    0.151630] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.151670] l3: Bringing 0uV into 925000-925000uV
+[    0.151856] l3: supplied by regulator-dummy
+[    0.152070] l4: supplied by regulator-dummy
+[    0.152218] l5: Bringing 0uV into 1800000-1800000uV
+[    0.152419] l5: supplied by regulator-dummy
+[    0.152509] l6: Bringing 0uV into 1800000-1800000uV
+[    0.152708] l6: supplied by regulator-dummy
+[    0.152793] l7: Bringing 0uV into 1800000-1800000uV
+[    0.152978] l7: supplied by regulator-dummy
+[    0.153094] l8: Bringing 0uV into 2900000-2900000uV
+[    0.153294] l8: supplied by regulator-dummy
+[    0.153386] l9: Bringing 0uV into 3000000-3000000uV
+[    0.153589] l9: supplied by regulator-dummy
+[    0.153847] l10: supplied by regulator-dummy
+[    0.153960] l11: Bringing 0uV into 2800000-2800000uV
+[    0.154160] l11: supplied by regulator-dummy
+[    0.154254] l12: Bringing 0uV into 1800000-1800000uV
+[    0.154449] l12: supplied by regulator-dummy
+[    0.154550] l13: Bringing 0uV into 3075000-3075000uV
+[    0.154750] l13: supplied by regulator-dummy
+[    0.155009] l14: supplied by regulator-dummy
+[    0.155278] l15: supplied by regulator-dummy
+[    0.155580] l16: supplied by regulator-dummy
+[    0.155699] l17: Bringing 0uV into 2800000-2800000uV
+[    0.155911] l17: supplied by regulator-dummy
+[    0.156156] l18: supplied by regulator-dummy
+[    0.156250] l19: Bringing 0uV into 1200000-1200000uV
+[    0.156449] l19: supplied by regulator-dummy
+[    0.156716] l20: supplied by regulator-dummy
+[    0.156965] l21: supplied by regulator-dummy
+[    0.157232] l22: supplied by regulator-dummy
+[    0.157349] l23: Bringing 0uV into 1050000-1050000uV
+[    0.157546] l23: supplied by regulator-dummy
+[    0.160014] NET: Registered protocol family 2
+[    0.160234] IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.162607] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+[    0.162745] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.163063] TCP bind hash table entries: 32768 (order: 7, 524288 bytes, linear)
+[    0.163697] TCP: Hash tables configured (established 32768 bind 32768)
+[    0.163841] UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    0.163962] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    0.164237] NET: Registered protocol family 1
+[    0.164798] RPC: Registered named UNIX socket transport module.
+[    0.164813] RPC: Registered udp transport module.
+[    0.164823] RPC: Registered tcp transport module.
+[    0.164833] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.165091] Unpacking initramfs...
+[    0.176313] hw perfevents: enabled with armv8_cortex_a53 PMU driver, 7 counters available
+[    0.176913] kvm [1]: HYP mode not available
+[    0.181761] Initialise system trusted keyrings
+[    0.181936] workingset: timestamp_bits=42 max_order=20 bucket_order=0
+[    0.191507] NFS: Registering the id_resolver key type
+[    0.191564] Key type id_resolver registered
+[    0.191576] Key type id_legacy registered
+[    0.191692] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    0.191713] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+[    0.191904] 9p: Installing v9fs 9p2000 file system support
+[    0.245246] Key type asymmetric registered
+[    0.245266] Asymmetric key parser 'x509' registered
+[    0.245324] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 250)
+[    0.245340] io scheduler mq-deadline registered
+[    0.245351] io scheduler kyber registered
+[    0.246877] qcom-qusb2-phy 79000.phy: Registered Qcom-QUSB2 phy
+[    0.261870] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.263771] msm_serial: driver initialized
+[    0.264467] qcom-iommu soc:iommu@1c40000: iommu sec: pgtable size: 135168
+[    0.265139] Freeing initrd memory: 2356K
+[    0.275812] platform 1a01000.mdp: Fixing up cyclic dependency with 1a94000.dsi
+[    0.288548] loop: module loaded
+[    0.288907] Driver 'sm5708-mfd' needs updating - please use bus_type methods
+[    0.292827] sm5708-rgb-leds: Failed to locate of_node [id: -1]
+[    0.292930] sm5708-fled: Failed to locate of_node [id: -1]
+[    0.294097] spmi spmi-0: PMIC arbiter version v2 (0x20010000)
+[    0.298436] s1: supplied by regulator-dummy
+[    0.298670] s2: supplied by regulator-dummy
+[    0.298904] s3: supplied by regulator-dummy
+[    0.299111] s4: supplied by regulator-dummy
+[    0.299368] s5: supplied by regulator-dummy
+[    0.299817] s6: supplied by regulator-dummy
+[    0.300034] l1: supplied by regulator-dummy
+[    0.300244] l2: supplied by regulator-dummy
+[    0.300481] l3: supplied by regulator-dummy
+[    0.300697] l4: supplied by regulator-dummy
+[    0.300763] qcom-spmi-regulator 200f000.spmi:pmic@1:regulators: unsupported regulator: name=l5 type=0x21, subtype=0x2B, dig major rev=0x02
+[    0.300947] l6: supplied by regulator-dummy
+[    0.301181] l7: supplied by regulator-dummy
+[    0.301396] l8: supplied by regulator-dummy
+[    0.301614] l9: supplied by regulator-dummy
+[    0.301850] l10: supplied by regulator-dummy
+[    0.302077] l11: supplied by regulator-dummy
+[    0.302299] l12: supplied by regulator-dummy
+[    0.302538] l13: supplied by regulator-dummy
+[    0.302763] l14: supplied by regulator-dummy
+[    0.302982] l15: supplied by regulator-dummy
+[    0.303220] l16: supplied by regulator-dummy
+[    0.303472] l17: supplied by regulator-dummy
+[    0.303696] l18: supplied by regulator-dummy
+[    0.303959] l19: supplied by regulator-dummy
+[    0.304192] l20: supplied by regulator-dummy
+[    0.304419] l21: supplied by regulator-dummy
+[    0.304659] l22: supplied by regulator-dummy
+[    0.304885] l23: supplied by regulator-dummy
+[    0.307483] libphy: Fixed MDIO Bus: probed
+[    0.307503] tun: Universal TUN/TAP device driver, 1.6
+[    0.308468] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.308482] ehci-platform: EHCI generic platform driver
+[    0.309101] usbcore: registered new interface driver usb-storage
+[    0.309864] i2c /dev entries driver
+[    0.310791] i2c_qup 78b6000.i2c: using default clock-frequency 100000
+[    0.310814] i2c_qup 78b6000.i2c: 
+                tx channel not available
+[    0.312003] i2c_qup 7af5000.i2c: using default clock-frequency 100000
+[    0.312027] i2c_qup 7af5000.i2c: 
+                tx channel not available
+[    0.317340] device-mapper: ioctl: 4.45.0-ioctl (2021-03-22) initialised: dm-devel@redhat.com
+[    0.320523] sdhci: Secure Digital Host Controller Interface driver
+[    0.320547] sdhci: Copyright(c) Pierre Ossman
+[    0.320749] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.321437] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.321508] hid: raw HID events driver (C) Jiri Kosina
+[    0.322127] usbcore: registered new interface driver usbhid
+[    0.322140] usbhid: USB HID core driver
+[    0.322392] ashmem: initialized
+[    0.325904] NET: Registered protocol family 17
+[    0.326112] 9pnet: Installing 9P2000 support
+[    0.326177] Key type dns_resolver registered
+[    0.326541] registered taskstats version 1
+[    0.326556] Loading compiled-in X.509 certificates
+[    0.326733] Key type ._fscrypt registered
+[    0.326745] Key type .fscrypt registered
+[    0.326754] Key type fscrypt-provisioning registered
+[    0.345749] pca953x 0-0020: using no AI
+[    1.175300] pca953x 0-0020: failed writing register
+[    1.182560] cpu cpu0: Failed to add OPP name speed6-pvs0-v0
+[    1.213703] random: fast init done
+[    1.234535] adreno 1c00000.gpu: Adding to iommu group 0
+[    1.235336] msm_mdp 1a01000.mdp: Adding to iommu group 1
+[    1.247774] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[    1.247891] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[    1.248131] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[    1.249057] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[    1.250405] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[    1.254251] dwc3-qcom 70f8800.usb: IRQ dp_hs_phy_irq not found
+[    1.254284] dwc3-qcom 70f8800.usb: IRQ dm_hs_phy_irq not found
+[    1.270934] qcom-cpr3 b018000.power-controller: thread initialized with 10 OPPs
+[    1.274101] cpufreq: cpufreq_online: CPU0: Running at unlisted initial frequency: 883200 KHz, changing to: 1036800 KHz
+[    1.276833] sdhci_msm 7864900.sdhci: Got CD GPIO
+[    1.291663] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[    1.291750] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[    1.291879] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[    1.292562] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[    1.293877] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[    1.318905] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[    1.318985] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[    1.319114] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[    1.319504] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[    1.320090] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[    1.322377] input: GPIO Button as /devices/platform/gpio-keys/input/input0
+[    1.323052] input: GPIO Hall Effect Sensor as /devices/platform/gpio-hall-sensor/input/input1
+[    1.323820] ALSA device list:
+[    1.323839]   No soundcards found.
+[    1.323873] Warning: unable to open an initial console.
+[    1.324182] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[    1.324219] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[    1.324330] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[    1.324595] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[    1.325134] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[    1.327588] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[    1.327636] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[    1.327741] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[    1.327991] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[    1.328512] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[    1.356357] mmc0: SDHCI controller on 7824900.sdhci [7824900.sdhci] using ADMA 64-bit
+[    1.358186] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[    1.358249] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[    1.358403] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[    1.358774] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[    1.359613] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[    1.364040] mmc1: SDHCI controller on 7864900.sdhci [7864900.sdhci] using ADMA 64-bit
+[    1.364819] Freeing unused kernel memory: 1792K
+[    1.365779] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[    1.365823] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[    1.365939] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[    1.366205] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[    1.366734] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[    1.387744] Run /init as init process
+[    1.387773]   with arguments:
+[    1.387776]     /init
+[    1.387778]     PMOS_NO_OUTPUT_REDIRECT
+[    1.387782]   with environment:
+[    1.387784]     HOME=/
+[    1.387786]     TERM=linux
+[    1.488963] mmc0: new HS400 MMC card at address 0001
+[    1.489855] mmcblk0: mmc0:0001 RH64AB 58.2 GiB 
+[    1.490053] mmcblk0boot0: mmc0:0001 RH64AB 4.00 MiB 
+[    1.490232] mmcblk0boot1: mmc0:0001 RH64AB 4.00 MiB 
+[    1.490730] mmcblk0rpmb: mmc0:0001 RH64AB 16.0 MiB, chardev (245:0)
+[    1.495330]  mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20 p21 p22 p23 p24 p25 p26 p27 p28 p29 p30 p31 p32 p33 p34 p35 p36 p37 p38 p39 p40 p41 p42 p43 p44 p45 p46
+[    1.506916] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[    1.507007] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[    1.507159] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[    1.507630] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[    1.508465] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[    1.560598] mmc1: new high speed SD card at address 1234
+[    1.561214] mmcblk1: mmc1:1234 SA02G 1.85 GiB 
+[    1.563380]  mmcblk1: p1
+[    1.566824] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[    1.566888] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[    1.567016] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[    1.567360] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[    1.568130] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   13.078633] using random self ethernet address
+[   13.078662] using random host ethernet address
+[   13.093898] usb0: HOST MAC 82:17:e6:17:2e:cf
+[   13.093981] usb0: MAC 56:d6:02:7a:d2:00
+[   13.429613] NOHZ tick-stop error: Non-RCU local softirq work is pending, handler #08!!!
+[   13.516097] EXT4-fs (dm-0): mounted filesystem without journal. Opts: (null). Quota mode: none.
+[   13.822877] NOHZ tick-stop error: Non-RCU local softirq work is pending, handler #08!!!
+[   13.822973] NOHZ tick-stop error: Non-RCU local softirq work is pending, handler #08!!!
+[   13.822982] NOHZ tick-stop error: Non-RCU local softirq work is pending, handler #08!!!
+[   13.823019] NOHZ tick-stop error: Non-RCU local softirq work is pending, handler #08!!!
+[   13.823028] NOHZ tick-stop error: Non-RCU local softirq work is pending, handler #08!!!
+[   13.898811] random: crng init done
+[   14.405369] NOHZ tick-stop error: Non-RCU local softirq work is pending, handler #08!!!
+[   14.822743] NOHZ tick-stop error: Non-RCU local softirq work is pending, handler #08!!!
+[   14.822821] NOHZ tick-stop error: Non-RCU local softirq work is pending, handler #08!!!
+[   14.843787] NOHZ tick-stop error: Non-RCU local softirq work is pending, handler #08!!!
+[   15.697206] EXT4-fs (dm-1): INFO: recovery required on readonly filesystem
+[   15.697235] EXT4-fs (dm-1): write access will be enabled during recovery
+[   16.020176] EXT4-fs (dm-1): recovery complete
+[   16.022190] EXT4-fs (dm-1): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+[   16.408208] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
+[   16.409450] EXT4-fs (dm-0): mounted filesystem without journal. Opts: (null). Quota mode: none.
+[   17.628910] udevd[1052]: starting version 3.2.10
+[   17.676036] udevd[1052]: starting eudev-3.2.10
+[   17.763030] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   17.763083] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   17.763207] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.763553] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.764130] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   17.778650] sm5708-charger sm5708-charger: DMA mask not set
+[   17.783246] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   17.783337] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   17.783483] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.783780] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.784302] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   17.798010] mc: Linux media interface: v0.10
+[   17.801918] i2c 8-0028: Fixing up cyclic dependency with 1b34000.camss
+[   17.802351] i2c 8-0010: Fixing up cyclic dependency with 1b34000.camss
+[   17.808484] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   17.808549] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   17.808690] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.809052] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.809778] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   17.813006] input: pm8941_pwrkey as /devices/platform/soc/200f000.spmi/spmi-0/0-00/200f000.spmi:pmic@0:pon@800/200f000.spmi:pmic@0:pon@800:pwrkey/input/input2
+[   17.813114] rtc-pm8xxx 200f000.spmi:pmic@0:rtc@6000: registered as rtc0
+[   17.813844] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   17.813900] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   17.814039] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.814541] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.815577] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   17.816309] i2c 9-002d: Fixing up cyclic dependency with 1b34000.camss
+[   17.816768] input: pm8941_pwrkey as /devices/platform/soc/200f000.spmi/spmi-0/0-00/200f000.spmi:pmic@0:pon@800/200f000.spmi:pmic@0:pon@800:resin/input/input3
+[   17.819157] videodev: Linux video capture interface: v2.00
+[   17.820189] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   17.820300] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   17.820578] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.822208] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.825210] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   17.832685] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   17.832780] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   17.832993] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.833380] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.836596] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   17.855162] NET: Registered protocol family 42
+[   17.856472] remoteproc remoteproc0: 4080000.remoteproc is available
+[   17.860552] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   17.860626] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   17.860806] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.861330] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.862270] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   17.867128] qcom-venus 1d00000.venus: Adding to iommu group 2
+[   17.867135] ipa 7940000.ipa: IPA driver initialized
+[   17.867877] qcom-venus 1d00000.venus: non legacy binding
+[   17.872688] qcom-camss 1b34000.camss: Adding to iommu group 3
+[   17.874028] ipa 7940000.ipa: IPA driver setup completed successfully
+[   17.890471] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   17.890553] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   17.890700] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.891117] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.892458] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   17.902227] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   17.902288] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   17.902447] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.902878] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.903647] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   17.923412] tfa987x 7-0034: Unsupported chip revision: 0x1b96
+[   17.925848] remoteproc remoteproc1: a204000.remoteproc is available
+[   17.929109] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   17.929164] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   17.929266] remoteproc remoteproc1: powering up a204000.remoteproc
+[   17.929277] remoteproc remoteproc1: Booting fw image wcnss.mdt, size 7324
+[   17.929345] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.929668] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.930669] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   17.937759] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   17.937831] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   17.937971] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.938439] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.939595] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   17.943453] qcom_q6v5_pas c200000.remoteproc: supply cx not found, using dummy regulator
+[   17.943761] qcom_q6v5_pas c200000.remoteproc: supply px not found, using dummy regulator
+[   17.944850] remoteproc remoteproc2: c200000.remoteproc is available
+[   17.946603] qcom,pm8916-wcd-spmi-codec 200f000.spmi:pmic@1:codec@f000: failed to get mclk
+[   17.947553] remoteproc remoteproc2: powering up c200000.remoteproc
+[   17.947578] remoteproc remoteproc2: Booting fw image adsp.mdt, size 7516
+[   17.948188] msm8916-wcd-digital-codec c0f0000.codec: failed to get mclk
+[   17.949815] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   17.949865] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   17.949996] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.950293] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.950860] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   17.957194] gpio-vibrator vibrator: supply vcc not found, using dummy regulator
+[   17.957867] input: gpio-vibrator as /devices/platform/vibrator/input/input4
+[   17.959127] qcom,pm8916-wcd-spmi-codec 200f000.spmi:pmic@1:codec@f000: failed to get mclk
+[   17.962848] msm8916-wcd-digital-codec c0f0000.codec: failed to get mclk
+[   17.976006] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   17.976066] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   17.976277] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.976704] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.977437] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   17.980115] qcom,pm8916-wcd-spmi-codec 200f000.spmi:pmic@1:codec@f000: failed to get mclk
+[   17.981632] msm8916-wcd-digital-codec c0f0000.codec: failed to get mclk
+[   17.983256] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   17.983391] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   17.983640] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.984120] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   17.985098] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   18.005598] NET: Registered protocol family 10
+[   18.006726] Segment Routing with IPv6
+[   18.172319] qcom,pm8916-wcd-spmi-codec 200f000.spmi:pmic@1:codec@f000: failed to get mclk
+[   18.173429] msm8916-wcd-digital-codec c0f0000.codec: failed to get mclk
+[   18.185273] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   18.185330] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   18.185455] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   18.185835] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   18.186537] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   18.187742] EXT4-fs (dm-1): re-mounted. Opts: (null). Quota mode: none.
+[   18.206738] remoteproc remoteproc2: remote processor c200000.remoteproc is now up
+[   18.212208] qcom,pm8916-wcd-spmi-codec 200f000.spmi:pmic@1:codec@f000: failed to get mclk
+[   18.213420] msm8916-wcd-digital-codec c0f0000.codec: failed to get mclk
+[   18.214842] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   18.214893] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   18.215015] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   18.215453] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   18.216182] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   18.284291] qcom,apr remoteproc2:smd-edge.apr_audio_svc.-1.-1: Adding APR dev: aprsvc:q6core:4:3
+[   18.284424] qcom,apr remoteproc2:smd-edge.apr_audio_svc.-1.-1: Adding APR dev: aprsvc:q6afe:4:4
+[   18.284487] qcom,apr remoteproc2:smd-edge.apr_audio_svc.-1.-1: Adding APR dev: aprsvc:q6asm:4:7
+[   18.284547] qcom,apr remoteproc2:smd-edge.apr_audio_svc.-1.-1: Adding APR dev: aprsvc:q6adm:4:8
+[   18.284607] qcom,apr remoteproc2:smd-edge.apr_audio_svc.-1.-1: Adding APR dev: aprsvc:apr-service:4:9
+[   18.284671] qcom,apr remoteproc2:smd-edge.apr_audio_svc.-1.-1: Adding APR dev: aprsvc:apr-service:4:a
+[   18.284727] qcom,apr remoteproc2:smd-edge.apr_audio_svc.-1.-1: Adding APR dev: aprsvc:apr-service:4:b
+[   18.285867] qcom,pm8916-wcd-spmi-codec 200f000.spmi:pmic@1:codec@f000: failed to get mclk
+[   18.287445] msm8916-wcd-digital-codec c0f0000.codec: failed to get mclk
+[   18.289346] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   18.289411] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   18.289667] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   18.290191] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   18.291112] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   18.294358] qcom,pm8916-wcd-spmi-codec 200f000.spmi:pmic@1:codec@f000: failed to get mclk
+[   18.296151] msm8916-wcd-digital-codec c0f0000.codec: failed to get mclk
+[   18.298130] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   18.298210] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   18.298371] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   18.298804] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   18.299726] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   18.302169] qcom,pm8916-wcd-spmi-codec 200f000.spmi:pmic@1:codec@f000: failed to get mclk
+[   18.303428] msm8916-wcd-digital-codec c0f0000.codec: failed to get mclk
+[   18.305146] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   18.305205] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   18.305359] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   18.305844] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   18.306567] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   18.308740] qcom,pm8916-wcd-spmi-codec 200f000.spmi:pmic@1:codec@f000: failed to get mclk
+[   18.314220] msm8916-wcd-digital-codec c0f0000.codec: failed to get mclk
+[   18.317114] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   18.317512] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   18.317663] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   18.318075] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   18.319495] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   18.322099] qcom,pm8916-wcd-spmi-codec 200f000.spmi:pmic@1:codec@f000: failed to get mclk
+[   18.323757] msm8916-wcd-digital-codec c0f0000.codec: failed to get mclk
+[   18.326810] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   18.327166] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   18.327318] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   18.327815] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   18.329463] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   18.332050] qcom,pm8916-wcd-spmi-codec 200f000.spmi:pmic@1:codec@f000: failed to get mclk
+[   18.340657] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   18.340702] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   18.340810] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   18.341144] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   18.341809] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   18.348021] msm_mdp 1a01000.mdp: [drm:mdp5_bind] MDP5 version v1.16
+[   18.348066] msm 1a00000.mdss: bound 1a01000.mdp (ops mdp5_ops)
+[   18.348180] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   18.348507] msm_dsi 1a94000.dsi: supply gdsc not found, using dummy regulator
+[   18.349172] msm_dsi_manager_register: failed to register mipi dsi host for DSI 0
+[   20.110369] blk_update_request: I/O error, dev mmcblk1, sector 8192 op 0x0:(READ) flags 0x80700 phys_seg 1 prio class 0
+[   20.781742] blk_update_request: I/O error, dev mmcblk1, sector 8193 op 0x0:(READ) flags 0x80700 phys_seg 1 prio class 0
+[   21.453378] blk_update_request: I/O error, dev mmcblk1, sector 8194 op 0x0:(READ) flags 0x80700 phys_seg 1 prio class 0
+[   22.125035] blk_update_request: I/O error, dev mmcblk1, sector 8195 op 0x0:(READ) flags 0x80700 phys_seg 1 prio class 0
+[   22.796691] blk_update_request: I/O error, dev mmcblk1, sector 8196 op 0x0:(READ) flags 0x80700 phys_seg 1 prio class 0
+[   23.270211] remoteproc remoteproc1: remote processor a204000.remoteproc is now up
+[   23.468347] blk_update_request: I/O error, dev mmcblk1, sector 8197 op 0x0:(READ) flags 0x80700 phys_seg 1 prio class 0
+[   24.140005] blk_update_request: I/O error, dev mmcblk1, sector 8198 op 0x0:(READ) flags 0x80700 phys_seg 1 prio class 0
+[   24.811582] blk_update_request: I/O error, dev mmcblk1, sector 8199 op 0x0:(READ) flags 0x80700 phys_seg 1 prio class 0
+[   26.343127] remoteproc remoteproc1: crash detected in a204000.remoteproc: type watchdog
+[   26.343171] remoteproc remoteproc1: handling crash #1 in a204000.remoteproc
+[   26.343179] remoteproc remoteproc1: recovering a204000.remoteproc
+[   26.346053] remoteproc remoteproc1: stopped remote processor a204000.remoteproc
+[   26.826645] blk_update_request: I/O error, dev mmcblk1, sector 8192 op 0x0:(READ) flags 0x0 phys_seg 1 prio class 0
+[   27.498305] blk_update_request: I/O error, dev mmcblk1, sector 8193 op 0x0:(READ) flags 0x0 phys_seg 1 prio class 0
+[   28.169832] blk_update_request: I/O error, dev mmcblk1, sector 8194 op 0x0:(READ) flags 0x0 phys_seg 1 prio class 0
+[   28.841417] blk_update_request: I/O error, dev mmcblk1, sector 8195 op 0x0:(READ) flags 0x0 phys_seg 1 prio class 0
+[   29.513069] blk_update_request: I/O error, dev mmcblk1, sector 8196 op 0x0:(READ) flags 0x0 phys_seg 1 prio class 0
+[   30.184720] blk_update_request: I/O error, dev mmcblk1, sector 8197 op 0x0:(READ) flags 0x0 phys_seg 1 prio class 0
+[   30.856368] blk_update_request: I/O error, dev mmcblk1, sector 8198 op 0x0:(READ) flags 0x0 phys_seg 1 prio class 0
+[   31.528017] blk_update_request: I/O error, dev mmcblk1, sector 8199 op 0x0:(READ) flags 0x0 phys_seg 1 prio class 0
+[   31.528065] Buffer I/O error on dev mmcblk1, logical block 1024, async page read
+[   31.711871] tsp_ldo: disabling
+[   31.711903] prox_led_ldo: disabling
+[   31.711912] grip_ldo: disabling
+[   31.711919] cam_rear_vddio: disabling
+[   31.711926] cam_rear_vddaf: disabling
+[   31.711934] cam_aux_vddio: disabling
+[   31.717062] remoteproc remoteproc1: remote processor a204000.remoteproc is now up
+[   34.745832] remoteproc remoteproc1: crash detected in a204000.remoteproc: type watchdog
+[   34.745892] remoteproc remoteproc1: handling crash #2 in a204000.remoteproc
+[   34.745909] remoteproc remoteproc1: recovering a204000.remoteproc
+[   34.749453] remoteproc remoteproc1: stopped remote processor a204000.remoteproc
+[   39.908330] remoteproc remoteproc1: remote processor a204000.remoteproc is now up
+[   43.131421] remoteproc remoteproc1: crash detected in a204000.remoteproc: type watchdog
+[   43.131492] remoteproc remoteproc1: handling crash #3 in a204000.remoteproc
+[   43.131510] remoteproc remoteproc1: recovering a204000.remoteproc
+[   43.134486] remoteproc remoteproc1: stopped remote processor a204000.remoteproc
+[   48.357156] remoteproc remoteproc1: remote processor a204000.remoteproc is now up
+[   51.521450] remoteproc remoteproc1: crash detected in a204000.remoteproc: type watchdog
+[   51.521527] remoteproc remoteproc1: handling crash #4 in a204000.remoteproc
+[   51.521545] remoteproc remoteproc1: recovering a204000.remoteproc
+[   51.525270] remoteproc remoteproc1: stopped remote processor a204000.remoteproc
+[   56.804732] remoteproc remoteproc1: remote processor a204000.remoteproc is now up
+[   59.917804] remoteproc remoteproc1: crash detected in a204000.remoteproc: type watchdog
+[   59.917875] remoteproc remoteproc1: handling crash #5 in a204000.remoteproc
+[   59.917893] remoteproc remoteproc1: recovering a204000.remoteproc
+[   59.920885] remoteproc remoteproc1: stopped remote processor a204000.remoteproc
+[   65.252258] remoteproc remoteproc1: remote processor a204000.remoteproc is now up
+[   68.299607] remoteproc remoteproc1: crash detected in a204000.remoteproc: type watchdog
+[   68.299669] remoteproc remoteproc1: handling crash #6 in a204000.remoteproc
+[   68.299687] remoteproc remoteproc1: recovering a204000.remoteproc
+[   68.302529] remoteproc remoteproc1: stopped remote processor a204000.remoteproc
+[   73.444746] remoteproc remoteproc1: remote processor a204000.remoteproc is now up
+[   76.688969] remoteproc remoteproc1: crash detected in a204000.remoteproc: type watchdog
+[   76.689034] remoteproc remoteproc1: handling crash #7 in a204000.remoteproc
+[   76.689042] remoteproc remoteproc1: recovering a204000.remoteproc
+[   76.692680] remoteproc remoteproc1: stopped remote processor a204000.remoteproc
+[   81.892202] remoteproc remoteproc1: remote processor a204000.remoteproc is now up
+[   85.077757] remoteproc remoteproc1: crash detected in a204000.remoteproc: type watchdog
+[   85.077828] remoteproc remoteproc1: handling crash #8 in a204000.remoteproc
+[   85.077846] remoteproc remoteproc1: recovering a204000.remoteproc
+[   85.080881] remoteproc remoteproc1: stopped remote processor a204000.remoteproc
+[   90.340648] remoteproc remoteproc1: remote processor a204000.remoteproc is now up
+[   93.455328] remoteproc remoteproc1: crash detected in a204000.remoteproc: type watchdog
+[   93.455400] remoteproc remoteproc1: handling crash #9 in a204000.remoteproc
+[   93.455417] remoteproc remoteproc1: recovering a204000.remoteproc
+[   93.458171] remoteproc remoteproc1: stopped remote processor a204000.remoteproc
+[   98.789057] remoteproc remoteproc1: remote processor a204000.remoteproc is now up
+[  101.845710] remoteproc remoteproc1: crash detected in a204000.remoteproc: type watchdog
+[  101.845782] remoteproc remoteproc1: handling crash #10 in a204000.remoteproc
+[  101.845801] remoteproc remoteproc1: recovering a204000.remoteproc
+[  101.848950] remoteproc remoteproc1: stopped remote processor a204000.remoteproc
+[  106.980721] remoteproc remoteproc1: remote processor a204000.remoteproc is now up
+[  110.223716] remoteproc remoteproc1: crash detected in a204000.remoteproc: type watchdog
+[  110.223786] remoteproc remoteproc1: handling crash #11 in a204000.remoteproc
+[  110.223804] remoteproc remoteproc1: recovering a204000.remoteproc
+[  110.226754] remoteproc remoteproc1: stopped remote processor a204000.remoteproc
+[  115.428492] remoteproc remoteproc1: remote processor a204000.remoteproc is now up
+[  118.609654] remoteproc remoteproc1: crash detected in a204000.remoteproc: type watchdog
+[  118.609726] remoteproc remoteproc1: handling crash #12 in a204000.remoteproc
+[  118.609745] remoteproc remoteproc1: recovering a204000.remoteproc
+[  118.612869] remoteproc remoteproc1: stopped remote processor a204000.remoteproc
+[  123.876285] remoteproc remoteproc1: remote processor a204000.remoteproc is now up
+[  127.001636] remoteproc remoteproc1: crash detected in a204000.remoteproc: type watchdog
+[  127.001680] remoteproc remoteproc1: handling crash #13 in a204000.remoteproc
+[  127.001689] remoteproc remoteproc1: recovering a204000.remoteproc
+[  127.004549] remoteproc remoteproc1: stopped remote processor a204000.remoteproc
+[  132.324697] remoteproc remoteproc1: remote processor a204000.remoteproc is now up
+[  135.383841] remoteproc remoteproc1: crash detected in a204000.remoteproc: type watchdog
+[  135.383914] remoteproc remoteproc1: handling crash #14 in a204000.remoteproc
+[  135.383934] remoteproc remoteproc1: recovering a204000.remoteproc
+[  135.386853] remoteproc remoteproc1: stopped remote processor a204000.remoteproc
+[  140.516900] remoteproc remoteproc1: remote processor a204000.remoteproc is now up
+[  143.773506] remoteproc remoteproc1: crash detected in a204000.remoteproc: type watchdog
+[  143.773555] remoteproc remoteproc1: handling crash #15 in a204000.remoteproc
+[  143.773566] remoteproc remoteproc1: recovering a204000.remoteproc
+[  143.776483] remoteproc remoteproc1: stopped remote processor a204000.remoteproc
+[  148.965148] remoteproc remoteproc1: remote processor a204000.remoteproc is now up
+[  152.146287] remoteproc remoteproc1: crash detected in a204000.remoteproc: type watchdog
+[  152.146358] remoteproc remoteproc1: handling crash #16 in a204000.remoteproc
+[  152.146377] remoteproc remoteproc1: recovering a204000.remoteproc
+[  152.149510] remoteproc remoteproc1: stopped remote processor a204000.remoteproc
+[  157.412934] remoteproc remoteproc1: remote processor a204000.remoteproc is now up
+[  160.537848] remoteproc remoteproc1: crash detected in a204000.remoteproc: type watchdog
+[  160.537919] remoteproc remoteproc1: handling crash #17 in a204000.remoteproc
+[  160.537938] remoteproc remoteproc1: recovering a204000.remoteproc
+[  160.541012] remoteproc remoteproc1: stopped remote processor a204000.remoteproc
+[  165.860820] remoteproc remoteproc1: remote processor a204000.remoteproc is now up
